@@ -21,7 +21,6 @@ Build an AI-powered customer support bot in Python that:
 
 1. Clone this repository or download the code.
  * Install dependencies:
-bash
 """ pip install transformers sentence-transformers PyPDF2 """
 
 
