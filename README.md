@@ -28,7 +28,7 @@ Build an AI-powered customer support bot in Python that:
 ## Streamlit UI
 
 <img width="661" height="85" alt="image" src="https://github.com/user-attachments/assets/8772a317-0df1-4841-8b0b-06d5861b78e6" />
-
+<img width="754" height="45" alt="image" src="https://github.com/user-attachments/assets/a628099b-ba51-49ea-a477-63eddd856d25" />
 
 ## File Structure
 
@@ -44,7 +44,7 @@ Console Version
 * Logs saved in support_bot_log.txt.
 
 ## Streamlit Web App
-<img width="754" height="45" alt="image" src="https://github.com/user-attachments/assets/a628099b-ba51-49ea-a477-63eddd856d25" />
+
 * Upload your FAQ document (TXT or PDF)
 * Type a query in the input box
 * View initial and adjusted responses, along with feedback
