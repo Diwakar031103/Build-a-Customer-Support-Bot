@@ -38,8 +38,6 @@ Build an AI-powered customer support bot in Python that:
 
 ## Usage
 Console Version
-Run in terminal/command prompt
-<img width="759" height="50" alt="image" src="https://github.com/user-attachments/assets/16fc493c-e9cc-421e-9f65-a79fbd752faa" />
 * Bot reads faq.txt or any provided document.
 * Sample queries will be executed.
 * Responses and iterative improvements (based on feedback) will be printed in console.
