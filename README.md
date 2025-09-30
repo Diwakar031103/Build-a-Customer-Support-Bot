@@ -21,10 +21,10 @@ Build an AI-powered customer support bot in Python that:
 ## Installation
 
 1. Clone this repository or download the code.
-2. Install dependencies:
-
+ Install dependencies:
 ```bash
 pip install transformers sentence-transformers PyPDF2
+
 
 ## Streamlit UI
 <img width="661" height="85" alt="image" src="https://github.com/user-attachments/assets/8772a317-0df1-4841-8b0b-06d5861b78e6" />
@@ -32,6 +32,8 @@ pip install transformers sentence-transformers PyPDF2
 
 ## File Structure
 <img width="745" height="176" alt="image" src="https://github.com/user-attachments/assets/19cd276e-0de1-4108-b783-5cd1ceb67561" />
+
+
 
 ## Usage
 Console Version
