@@ -43,6 +43,10 @@ Console Version
 * Responses and iterative improvements (based on feedback) will be printed in console.
 * Logs saved in support_bot_log.txt.
 
+#### Optional: Run with provided PDF (Serri Doc.pdf)
+<img width="755" height="264" alt="image" src="https://github.com/user-attachments/assets/8964940f-069c-41e3-9dd7-c2416a0a7de8" />
+
+
 ## Streamlit Web App
 
 * Upload your FAQ document (TXT or PDF)
