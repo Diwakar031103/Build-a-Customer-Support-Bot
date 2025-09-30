@@ -1,0 +1,19 @@
+Resetting Your Password
+To reset your password, go to the login page and click "Forgot Password."
+Enter your registered email and follow the password reset link sent to you.
+
+Refund Policy
+We offer refunds within 30 days of purchase. Please contact support@example.com
+with your order number to start the refund process.
+
+Contacting Support
+You can contact our support team via email at support@example.com
+or call 1-800-555-1234 during business hours (9 AM - 5 PM EST).
+
+Shipping Information
+Orders are processed within 2 business days. Shipping usually takes 5-7 business days.
+You will receive a tracking number by email once your order has shipped.
+
+Account Deletion
+If you want to permanently delete your account, please send a request to support@example.com.
+Your account and associated data will be removed within 14 days.
