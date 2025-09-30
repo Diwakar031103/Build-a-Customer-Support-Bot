@@ -6,7 +6,7 @@
     from sentence_transformers import SentenceTransformer, util
     import PyPDF2
 
-    # Configure logging
+## logging Configuration
     logging.basicConfig(
         filename='support_bot_log.txt',
         level=logging.INFO,
