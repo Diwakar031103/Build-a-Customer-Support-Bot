@@ -18,14 +18,6 @@ Build an AI-powered customer support bot in Python that:
 - Handles unknown/out-of-scope queries gracefully
 
 
-## Installation
-
-1. Clone this repository or download the code.
- Install dependencies:
-```bash
-pip install transformers sentence-transformers PyPDF2
-
-
 ## Streamlit UI
 
 <img width="661" height="85" alt="image" src="https://github.com/user-attachments/assets/8772a317-0df1-4841-8b0b-06d5861b78e6" />
