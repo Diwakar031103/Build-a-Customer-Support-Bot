@@ -1,47 +1,92 @@
 # Support Bot Agent (Document-trained Customer Support Bot)
 
-This project provides a simple customer support bot that:
+## Objective
+Build an AI-powered customer support bot in Python that:
+- Reads and processes a provided document (TXT or PDF).
+- Answers customer queries based on that document.
+- Simulates feedback ("not helpful", "too vague") and iteratively improves responses.
+- Logs decisions and actions for transparency.
+- Handles out-of-scope queries gracefully.
 
-- Loads a provided document (`.txt` or `.pdf`), 
-- Uses sentence-transformers for semantic retrieval,
-- Uses a Hugging Face QA pipeline to answer queries based on the retrieved context,
-- Simulates feedback and iteratively improves the response (up to 2 iterations),
-- Logs actions to `support_bot_log.txt`.
 
-## Files
-- `support_bot_agent.py` — The main script containing `SupportBotAgent` class and a demo `__main__` block.
-- `faq.txt` — Sample FAQ used by the demo (auto-created if missing).
-- `requirements.txt` — Python package requirements.
-- `support_bot_log.txt` — Created at runtime (contains logs).
+## Features
+- Load FAQ or company documents (TXT or PDF)
+- Semantic search to find relevant sections (using `sentence-transformers`)
+- Pre-trained NLP model for question answering (Hugging Face Transformers)
+- Simulated feedback loop for response refinement
+- Logging of queries, answers, and feedback
+- Handles unknown/out-of-scope queries gracefully
 
-## Setup
-1. Create and activate a virtual environment (recommended):
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # Linux / macOS
-   venv\Scripts\activate    # Windows (PowerShell)
-   ```
 
+## Installation
+
+1. Clone this repository or download the code.
 2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
 
-## Running the demo
 ```bash
-python support_bot_agent.py
-```
-This will create `faq.txt` (if missing), load models, and run sample queries. Output will be printed to console and a log will be written to `support_bot_log.txt`.
+pip install transformers sentence-transformers PyPDF2
 
-## Notes / Next steps
-- For large documents, consider splitting into smaller chunks (by paragraph or fixed-size windows).
-- You can change the QA or embedder model names when creating `SupportBotAgent`.
-- To push to GitHub: initialize a repo, add files and push.
-```bash
-git init
-git add support_bot_agent.py requirements.txt README.md faq.txt
-git commit -m "Initial commit - support bot project"
-git branch -M main
-git remote add origin <your-github-repo-url>
-git push -u origin main
-```
+## Streamlit UI
+<img width="661" height="85" alt="image" src="https://github.com/user-attachments/assets/8772a317-0df1-4841-8b0b-06d5861b78e6" />
+
+
+## File Structure
+<img width="745" height="176" alt="image" src="https://github.com/user-attachments/assets/19cd276e-0de1-4108-b783-5cd1ceb67561" />
+
+## Usage
+Console Version
+Run in terminal/command prompt
+<img width="759" height="50" alt="image" src="https://github.com/user-attachments/assets/16fc493c-e9cc-421e-9f65-a79fbd752faa" />
+* Bot reads faq.txt or any provided document.
+* Sample queries will be executed.
+* Responses and iterative improvements (based on feedback) will be printed in console.
+* Logs saved in support_bot_log.txt.
+
+## Streamlit Web App
+<img width="754" height="45" alt="image" src="https://github.com/user-attachments/assets/a628099b-ba51-49ea-a477-63eddd856d25" />
+* Upload your FAQ document (TXT or PDF)
+* Type a query in the input box
+* View initial and adjusted responses, along with feedback
+
+## How It Works
+1 Document Training
+* Load the document (.txt or .pdf)
+* Split into sections (paragraphs) for semantic retrieval
+* Generate embeddings for sections (using sentence-transformers)
+
+2 Query Handling
+* Accept customer queries
+* Retrieve the most relevant section
+* Generate answer using QA model (distilbert-base-uncased-distilled-squad)
+
+3 Feedback Loop
+* Simulate feedback: "good", "too vague", "not helpful"
+* Adjust responses: add context or rephrase
+* Limit to 2 iterations per query
+
+4 Logging
+* All key actions logged in support_bot_log.txt (queries, selected sections, feedback, responses)
+
+5 Fallback for Unknown Queries
+* If query not covered in document:
+* Bot responds: "I don’t have enough information to answer that."
+
+## Sample Queries
+"How do I reset my password?"
+
+"What’s the refund policy?"
+
+"How do I contact support?"
+
+"How do I fly to the moon?" (out-of-scope example)
+
+## Evaluation Criteria Covered
+
+* Functionality: Trains on document, answers queries
+* Adaptability: Adjusts answers based on feedback
+* Code Quality: Modular, readable, well-commented
+* Logging: Tracks key steps and decisions
+* Robustness: Handles out-of-scope queries gracefully
+* Documentation: Clear README with setup and usage
+
+
