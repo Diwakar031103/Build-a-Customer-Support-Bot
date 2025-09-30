@@ -17,6 +17,14 @@ Build an AI-powered customer support bot in Python that:
 - Logging of queries, answers, and feedback
 - Handles unknown/out-of-scope queries gracefully
 
+## Installation
+
+1. Clone this repository or download the code.
+ * Install dependencies:
+bash
+""" pip install transformers sentence-transformers PyPDF2 """
+
+
 
 ## Streamlit UI
 
